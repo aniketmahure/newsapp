@@ -1,0 +1,34 @@
+.cards{
+    /* background-color: rgb(214, 206, 196); */
+    /* background-image: url("/../assets/newspaper.jpg"); */
+    border-style: solid;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    border-color: aliceblue;
+    backdrop-filter: blur(2px);
+    background-image: linear-gradient(to right,rgb(74, 55, 114), rgb(21, 4, 49));
+    color: whitesmoke;
+    overflow: auto;
+}
+.topcard{
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.example-form {
+    padding-top: 8%;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

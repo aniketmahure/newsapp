@@ -1,0 +1,66 @@
+<div class="base">
+  <app-navbar></app-navbar>
+  <div style="text-align: center">
+    <form name="form" (ngSubmit)="getSearched()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Country Name</mat-label>
+        <input
+          type="text"
+          [(ngModel)]="country"
+          name="country"
+          matInput
+          placeholder="Enter Country Name to Search"
+        />
+      </mat-form-field>
+
+      <button
+        type="submit"
+        style="margin-bottom: 2%; margin-left: 2%"
+        mat-raised-button
+        color="primary"
+      >
+        Search
+      </button>
+      <button
+        (click)="getArticle()"
+        style="margin-bottom: 2%; margin-left: 2%"
+        type="reset"
+        mat-raised-button
+        color="primary"
+      >
+        Clear
+      </button>
+    </form>
+  </div>
+  <div *ngFor="let article of articles" class="topcard">
+    <mat-card class="childcard">
+      <mat-card-content style="text-align: center"
+        ><b>{{ article.title }}</b></mat-card-content
+      >
+      <div *ngIf="login()" style="right: 0.4px; position: absolute">
+        <button
+          *ngIf="login()"
+          (click)="
+            addToFavorite(article.articleId, article.author, article.title)
+          "
+          color="warn"
+          mat-icon-button
+          aria-label="Example icon-button with share icon"
+        >
+          <mat-icon color="red"> favorite</mat-icon>
+        </button>
+      </div>
+      <mat-card-header>Author :{{ article.author }} </mat-card-header>
+      <mat-card-header>Published At :{{ article.publishedAt }}</mat-card-header>
+      <mat-card-content></mat-card-content>
+      <mat-card-content>{{ article.description }}</mat-card-content>
+      <mat-card-content
+        >continue on,<a href="{{ article.url }}">{{
+          article.url
+        }}</a></mat-card-content
+      >
+    </mat-card>
+    <br />
+  </div>
+</div>
+<app-footer></app-footer>

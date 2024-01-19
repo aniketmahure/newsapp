@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<div class="topcard">
+        <div class="cards">
+        <label style="text-align: center;"><h1><b>Registration</b></h1></label>
+        <div class="login">
+            <form class="example-form" name="form" (ngSubmit)="register()">
+                <mat-form-field class="example-full-width">
+                  <mat-label>User id</mat-label>
+                  <input #userid="ngModel" [(ngModel)]="user.userid" matInput placeholder="Enter valid user id" name="userid" required>
+                  <h6 *ngIf="userid.invalid && (userid.dirty || userid.touched)">Enter Valid id</h6>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Name</mat-label>
+                    <input #name="ngModel" [(ngModel)]="user.name" matInput placeholder="Enter valid name" name="name" required>
+                    <h6 *ngIf="name.invalid && (name.dirty || name.touched)">Enter Valid Name</h6>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Password</mat-label>
+                    <input #password="ngModel" [(ngModel)]="user.password" matInput placeholder="Enter valid password" name="password" required minlength="6">
+                    <h6 *ngIf="password.invalid && (password.dirty || password.touched)">Enter Valid Password</h6>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>email</mat-label>
+                    <input #email="ngModel" [(ngModel)]="user.email" matInput placeholder="Enter valid email" name="email" required email="true">
+                    <h6 *ngIf="email.invalid && (email.dirty || email.touched)">Enter Valid Email</h6>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Country</mat-label>
+                    <input #country="ngModel" [(ngModel)]="user.country" matInput placeholder="Enter valid country" name="country" required>
+                    <h6 *ngIf="country.invalid && (country.dirty || country.touched)">Enter Valid Country</h6>
+                </mat-form-field>
+                <div class="login">
+                    <button type="submit" mat-raised-button color="primary">Register</button> 
+                </div>
+              </form>
+        </div>
+        <br>
+        </div>
+</div>
+<br>
+<br>
+<app-footer></app-footer>

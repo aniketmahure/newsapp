@@ -1,0 +1,149 @@
+<app-navbar></app-navbar>
+<div class="topdiv">
+  <h1
+    style="
+      text-align: center;
+      color: whitesmoke;
+      font-size: 30px;
+      font-family: 'Dancing Script', cursive;
+      font-style: oblique;
+    "
+  >
+    <b>Hi, Welcome.</b>
+  </h1>
+  <br />
+  <div>
+    <mat-grid-list cols="3" rowHeight="2:1">
+      <mat-grid-tile
+        style="
+          background-image: url('/../assets/home1.jpg');
+          background-size: cover;
+          color: whitesmoke;
+        "
+        ><h2 style="background-color: rgba(43, 22, 76, 0.584); margin-top: 4px">
+          become more aware
+        </h2></mat-grid-tile
+      >
+      <mat-grid-tile
+        style="
+          background-image: url('/../assets/home2.jpg');
+          background-size: cover;
+          color: whitesmoke;
+        "
+        ><h2 style="background-color: rgba(43, 22, 76, 0.584); margin-top: 4px">
+          <b>Search by country</b>
+        </h2>
+      </mat-grid-tile>
+      <mat-grid-tile
+        style="
+          background-image: url('/../assets/home3.jpg');
+          background-size: cover;
+          color: whitesmoke;
+        "
+        ><h2 style="background-color: rgba(43, 22, 76, 0.584); margin-top: 4px">
+          <b>maintain favorites</b>
+        </h2></mat-grid-tile
+      >
+    </mat-grid-list>
+  </div>
+  <br />
+  <br />
+  <br />
+</div>
+<div
+  style="
+    background-image: linear-gradient(
+      to left,
+      rgb(74, 55, 114),
+      rgb(21, 4, 49)
+    );
+  "
+>
+  <mat-card class="allnews">
+    <div style="text-align: center; padding-top: 30px; color: whitesmoke">
+      <h1>Multiple Topics</h1>
+    </div>
+  </mat-card>
+</div>
+<div>
+  <mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile
+      style="
+        background-image: url('/../assets/homebar/enterain.jpg');
+        background-size: cover;
+        color: whitesmoke;
+      "
+      ><h2 style="background-color: rgba(43, 22, 76, 0.584); margin-top: 4px">
+        Entertainment
+      </h2></mat-grid-tile
+    >
+    <mat-grid-tile
+      style="
+        background-image: url('/../assets/homebar/news.jpg');
+        background-size: cover;
+        color: whitesmoke;
+      "
+      ><h2 style="background-color: rgba(43, 22, 76, 0.584); margin-top: 4px">
+        Politics
+      </h2></mat-grid-tile
+    >
+    <mat-grid-tile
+      style="
+        background-image: url('/../assets/homebar/science.jpg');
+        background-size: cover;
+        color: whitesmoke;
+      "
+      ><h2 style="background-color: rgba(43, 22, 76, 0.584); margin-top: 4px">
+        Science
+      </h2></mat-grid-tile
+    >
+    <mat-grid-tile
+      style="
+        background-image: url('/../assets/homebar/sports.jpg');
+        background-size: cover;
+        color: whitesmoke;
+      "
+      ><h2 style="background-color: rgba(43, 22, 76, 0.584); margin-top: 4px">
+        Sports
+      </h2></mat-grid-tile
+    >
+    <mat-grid-tile
+      style="
+        background-image: url('/../assets/homebar/tech.jpg');
+        background-size: cover;
+        color: whitesmoke;
+      "
+      ><h2 style="background-color: rgba(43, 22, 76, 0.584); margin-top: 4px">
+        Technology
+      </h2></mat-grid-tile
+    >
+    <mat-grid-tile
+      style="
+        background-image: url('/../assets/homebar/rnd.jpg');
+        background-size: cover;
+        color: whitesmoke;
+      "
+      ><h2 style="background-color: rgba(43, 22, 76, 0.584); margin-top: 4px">
+        Research
+      </h2></mat-grid-tile
+    >
+  </mat-grid-list>
+</div>
+<div
+  style="
+    background-image: linear-gradient(
+      to left,
+      rgb(74, 55, 114),
+      rgb(21, 4, 49)
+    );
+  "
+>
+  <mat-card class="allnews">
+    <div style="text-align: center; padding-top: 30px">
+      <button mat-raised-button color="primary" (click)="viewArticles()">
+        show articles
+      </button>
+    </div>
+  </mat-card>
+</div>
+<app-footer></app-footer>

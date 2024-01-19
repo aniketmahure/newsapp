@@ -1,0 +1,32 @@
+.div1{
+    background-image: url("/../assets/homebar/topics.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+}
+.topdiv{
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* background-image: url("/../assets/newspaper.jpg"); */
+    background-image: linear-gradient(to right,rgb(74, 55, 114), rgb(21, 4, 49));
+}
+.allnews{
+    /* background-image: url("/../assets/bottomnews.jpg"); */
+    background-image: linear-gradient(to left, rgb(74, 55, 114), rgb(21, 4, 49));
+    height: 100px;
+    /* border-radius: 20px; */
+    /* box-shadow: 0px 0px 10px 0px #9b9b9b,
+        0 1px 1px 0 #9b9b9b,
+        0 1px 3px 0 #9b9b9b; */
+}
+.example{
+    /* background-color:#20364B; */
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 30px;
+    /* border-color: aliceblue; */
+    backdrop-filter: blur(2px);
+    background: rgba(0,0,0,0.3);
+}

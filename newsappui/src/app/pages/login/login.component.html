@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<div class="topcard">
+    <!-- <mat-card class="cards"> -->
+        <div class="cards">
+        <h1 style="font-size: 30px;text-align: center;margin-top: 2%;"><b>Login</b></h1>
+        <div class="login">
+            <form class="example-form" (ngSubmit)="login()">
+                <mat-form-field class="example-full-width">
+                  <mat-label>User id</mat-label>
+                    <input #userId="ngModel" type="number" name="userId" matInput placeholder="Enter valid user id" [(ngModel)]="user.userId" required>
+                    <h6 *ngIf="userId.invalid && (userId.dirty || userId.touched)">Enter Valid id</h6>
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Password</mat-label>
+                    <input #password="ngModel" type="text" name="password" matInput placeholder="Enter valid password" [(ngModel)]="user.password" required>
+                    <h6 *ngIf="password.invalid && (password.dirty || password.touched)">Enter Valid password</h6>
+                </mat-form-field>
+                <div class="login">
+                    <button type="submit" mat-raised-button color="primary">Login</button> 
+                </div>
+              </form>
+        </div>
+        <br>
+        <div class="login">
+            <label><h3>If you are new then <a routerLink="/register" style="color: rgb(162, 123, 221);">Register</a></h3></label>
+            
+        </div>
+        </div>
+        
+    <!--    </mat-card> -->
+</div>
+<br>
+<br>
+<app-footer></app-footer>

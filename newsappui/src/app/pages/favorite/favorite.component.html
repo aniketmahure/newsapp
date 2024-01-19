@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+<div
+  style="
+    background-image: linear-gradient(
+      to left,
+      rgb(74, 55, 114),
+      rgb(21, 4, 49)
+    );
+    height: 10%;
+  "
+>
+  <div style="text-align: center; padding-top: 10px; color: whitesmoke">
+    <h1><b>My favorite Articles</b></h1>
+  </div>
+</div>
+<div class="base">
+  <div *ngIf="flag">
+    <mat-card class="childcard">
+      <mat-card-content>
+        <h1>Nothing added to favorite</h1>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div *ngFor="let article of articles" class="topcard">
+    <mat-card class="childcard">
+      <mat-card-content style="text-align: center"
+        ><b>{{ article.title }}</b></mat-card-content
+      >
+      <div *ngIf="article.userid" style="right: 0.4px; position: absolute">
+        <button
+          (click)="deleteFavArticle(article.title)"
+          color="warn"
+          mat-icon-button
+          aria-label="Example icon-button with share icon"
+        >
+          <mat-icon color="red">delete</mat-icon>
+        </button>
+      </div>
+      <mat-card-header *ngIf="article.userid"
+        >Author :{{ article.author }}
+      </mat-card-header>
+      <mat-card-content></mat-card-content>
+      <!-- <mat-card-content>continue on,<a href="{{article.url}}">{{article.url}}</a></mat-card-content>                      -->
+    </mat-card>
+    <br />
+  </div>
+</div>
+<app-footer></app-footer>

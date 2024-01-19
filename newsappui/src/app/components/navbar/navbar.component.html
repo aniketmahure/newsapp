@@ -1,0 +1,49 @@
+<div class="nav">
+  <mat-toolbar class="nav">
+    <div style="display: block; width: 7%">
+      <a routerLink="/home" id="home" title="home"
+        ><img
+          src="/../assets/newslogo.png"
+          style="width: 100%; border-radius: 6%"
+      /></a>
+    </div>
+    <div
+      routerLink="/viewAll"
+      *ngIf="login()"
+      title="Articles"
+      style="margin-left: 3%"
+    >
+      <mat-icon>newspaper</mat-icon>
+    </div>
+    <div class="spacer"></div>
+    <div *ngIf="login()" style="margin-right: 3%">
+      <mat-icon routerLink="/favorite" title="favorites">book</mat-icon>
+    </div>
+    <div *ngIf="login()" style="margin-right: 3%">
+      <mat-icon routerLink="/profile" title="profile">person</mat-icon>
+    </div>
+    <div *ngIf="login()" style="margin-right: 3%">
+      <mat-icon (click)="logout()" routerLink="/home" title="logout"
+        >logout</mat-icon
+      >
+    </div>
+    <button
+      style="margin-right: 3%"
+      *ngIf="!login()"
+      routerLink="/login"
+      mat-raised-button
+      color="primary"
+    >
+      Login
+    </button>
+    <button
+      style="margin-right: 2%"
+      *ngIf="!login()"
+      routerLink="/register"
+      mat-raised-button
+      color="primary"
+    >
+      Register
+    </button>
+  </mat-toolbar>
+</div>

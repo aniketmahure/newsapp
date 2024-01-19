@@ -1,0 +1,10 @@
+.spacer{
+    flex: 1 0.5 auto;
+  }
+.nav{
+  background-color: purple;
+  background-image: linear-gradient(to right,rgb(45, 23, 94), rgb(25, 6, 57));
+  background-repeat: repeat;
+  width: auto;
+  color: whitesmoke;
+}
