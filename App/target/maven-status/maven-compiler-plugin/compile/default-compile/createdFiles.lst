@@ -1,0 +1,7 @@
+com\newsApp\app\service\NewsServiceImpl.class
+com\newsApp\app\model\Collection.class
+com\newsApp\app\model\NewsArticle.class
+com\newsApp\app\exception\ArticleNotFoundException.class
+com\newsApp\app\controller\NewsController.class
+com\newsApp\app\AppApplication.class
+com\newsApp\app\service\NewsService.class
