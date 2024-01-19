@@ -14,7 +14,7 @@ https://newsapi.org/
 <img width="605" alt="image" style="textalign:center;" src="https://github.com/aniketmahure/newsapp/assets/56632536/71b338b2-5120-42c5-b329-ae5aaa28c922">
 
 Ports that need to remember:
-- 7001 user service
-- 7002 auth service
-- 7003 App service
-- 7004 fav service
+> 7001 user service
+> 7002 auth service
+> 7003 App service
+> 7004 fav service
