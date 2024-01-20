@@ -3,7 +3,7 @@ The application needs to fetch news article data by registering with the followi
 https://newsapi.org/
 
 # The responsibilities of the microservices in the above figure are as follows:
-
+### Mircoservices such as UserDetails, App, AuthenticationApp, FavouriteApp, ApiGateway, EurekaServer
 ### User Profile Service: This Service is responsible for storing user registration details. The Service publishes the user credentials sent as part of registration to the message bus and stores the remaining user profile information in the database.
 ### Authentication Service: This Service is responsible for consuming user credentials from the message bus and storing them in the database. When a user logs in, this service validates the login credentials against the credentials stored in the database. If the credentials match, this service generates a JWT token and sends back as response, else an error message is sent.
 ### News Service: This Service is responsible for accessing an external News API to fetch news based on the search criteria coming in as a request and returning back the list of matching news as response.
