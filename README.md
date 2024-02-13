@@ -20,3 +20,9 @@ https://newsapi.org/
 2. 7002 auth service
 3. 7003 App service
 4. 7004 fav service
+
+## steps to run kafka
+### bin/kafka-server-start.sh config/server.properties
+### bin/kafka-console-consumer.sh --topic topic --from-beginning --bootstrap-server localhost:9092
+### bin/kafka-console-producer.sh --topic topic --bootstrap-server localhost:9092
+### bin/zookeeper-server-start.sh config/zookeeper.properties
