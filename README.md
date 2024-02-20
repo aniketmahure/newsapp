@@ -1,7 +1,7 @@
 Develop a News Application that allows users to search for news articles, read the news article in HTML format, and save news articles to favorites.
 The application needs to fetch news article data by registering with the following API and get the API Key required to call the API.
 https://newsapi.org/
-# Access this Website https://elaborate-naiad-78eebc.netlify.app/home
+### Access this Website https://elaborate-naiad-78eebc.netlify.app/home
 # The responsibilities of the microservices in the above figure are as follows:
 ### Mircoservices such as UserDetails, App, AuthenticationApp, FavouriteApp, ApiGateway, EurekaServer
 ### User Profile Service: This Service is responsible for storing user registration details. The Service publishes the user credentials sent as part of registration to the message bus and stores the remaining user profile information in the database.
